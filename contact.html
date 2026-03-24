@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Sethulakshmi K S</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">SETHULAKSHMI K S</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="skills.html">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content Padding -->
+    <div style="padding-top: 80px;"></div>
+
+    <!-- Contact Section -->
+    <section class="section-padding bg-color">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="section-divider"></div>
+            
+            <div class="row g-5 mt-4">
+                <!-- Contact Info -->
+                <div class="col-lg-5">
+                    <div class="card border-0 shadow-sm p-4 h-100">
+                        <div class="card-body">
+                            <h4 class="mb-4">Contact Information</h4>
+                            <p class="text-muted mb-5">Feel free to reach out to me for any work or suggestions. Let's build something great together.</p>
+                            
+                            <div class="d-flex align-items-center mb-4">
+                                <div class="bg-light p-3 rounded-circle me-3">
+                                    <i class="fas fa-envelope text-primary fs-5"></i>
+                                </div>
+                                <div>
+                                    <h6 class="fw-bold mb-1">Email</h6>
+                                    <a href="mailto:kssethulakshmi634@gmail.com" class="text-muted text-decoration-none">kssethulakshmi634@gmail.com</a>
+                                </div>
+                            </div>
+
+                            <div class="d-flex align-items-center mb-4">
+                                <div class="bg-light p-3 rounded-circle me-3">
+                                    <i class="fas fa-phone-alt text-primary fs-5"></i>
+                                </div>
+                                <div>
+                                    <h6 class="fw-bold mb-1">Phone</h6>
+                                    <a href="tel:9876543210" class="text-muted text-decoration-none">9876543210</a>
+                                </div>
+                            </div>
+
+                            <div class="d-flex align-items-center mb-4">
+                                <div class="bg-light p-3 rounded-circle me-3">
+                                    <i class="fas fa-map-marker-alt text-primary fs-5"></i>
+                                </div>
+                                <div>
+                                    <h6 class="fw-bold mb-1">Location</h6>
+                                    <span class="text-muted">Idukki, Kerala, India</span>
+                                </div>
+                            </div>
+                            
+                            <div class="mt-5">
+                                <h6 class="fw-bold mb-3">Connect With Me:</h6>
+                                <div class="d-flex gap-3">
+                                    <a href="https://www.linkedin.com/in/sethulakshmi-k-s-a5156a2b9/" target="_blank" class="btn btn-outline border rounded-circle p-2 d-flex align-items-center justify-content-center" style="width:45px; height:45px;">
+                                        <i class="fab fa-linkedin-in text-primary fs-5"></i>
+                                    </a>
+                                    <a href="https://github.com/Sethulakshmik" target="_blank" class="btn btn-outline border rounded-circle p-2 d-flex align-items-center justify-content-center" style="width:45px; height:45px;">
+                                        <i class="fab fa-github text-dark fs-5"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="col-lg-7">
+                    <div class="card border-0 shadow-sm p-4 p-md-5 h-100">
+                        <div class="card-body">
+                            <h4 class="mb-4">Send a Message</h4>
+                            
+                            <!-- Alert for API Success/Error Messages -->
+                            <div id="form-message" class="alert d-none" role="alert"></div>
+
+                            <form id="contactForm" class="needs-validation" novalidate>
+                                <div class="row g-3">
+                                    <div class="col-md-6">
+                                        <label for="name" class="form-label fw-medium">Your Name</label>
+                                        <input type="text" class="form-control bg-light border-0" id="name" required placeholder="">
+                                        <div class="invalid-feedback">Please enter your name.</div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="email" class="form-label fw-medium">Your Email</label>
+                                        <input type="email" class="form-control bg-light border-0" id="email" required placeholder="">
+                                        <div class="invalid-feedback">Please enter a valid email address.</div>
+                                    </div>
+                                    <div class="col-12">
+                                        <label for="subject" class="form-label fw-medium">Subject</label>
+                                        <input type="text" class="form-control bg-light border-0" id="subject" required placeholder="">
+                                        <div class="invalid-feedback">Please enter a subject.</div>
+                                    </div>
+                                    <div class="col-12">
+                                        <label for="message" class="form-label fw-medium">Message</label>
+                                        <textarea class="form-control bg-light border-0" id="message" rows="5" required placeholder=""></textarea>
+                                        <div class="invalid-feedback">Please enter your message.</div>
+                                    </div>
+                                    <div class="col-12 mt-4">
+                                        <button type="submit" class="btn btn-primary px-4 py-2 w-100 fw-bold">Send Message <i class="fas fa-paper-plane ms-2"></i></button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer mt-auto">
+        <div class="container text-center">
+            <div class="footer-socials mb-4">
+                <a href="https://github.com/Sethulakshmik" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/sethulakshmi-k-s-a5156a2b9/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="mailto:kssethulakshmi634@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+            </div>
+            <p class="text-muted mb-0">&copy; 2026 Sethulakshmi K S | All Rights Reserved</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS for Form Validation -->
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
